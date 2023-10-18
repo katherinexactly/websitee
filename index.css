@@ -1,0 +1,727 @@
+@font-face{
+    font-family: 'Work';
+    src: url('Fonts/WorkSans-VariableFont_wght.ttf');
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'Allura';
+    src: url('Fonts/Allura-Regular.ttf');
+}
+#top-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddadab;
+    height: 100vh;
+}
+#top-page img{
+    width: 25%;
+    padding-top: 15px;
+    max-width: 180px;
+}
+#menu{
+    display: inline-block;
+    padding-top: 5px;
+}
+#pages{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#pages li{
+    display: inline;
+    padding-bottom: 15px;
+}
+#pages a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Work';
+    transition: color 0.3s;
+
+}
+#small-pages{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#small-pages li{
+    display: inline;
+}
+#small-pages a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #ddadab;
+    font-family: 'Work';
+    transition: color 0.3s;
+
+}
+li h3{
+    color: #875755;
+    font-family: 'Work';
+    margin-top: 3rem;
+}
+#pages a:hover{
+    color: #875755;
+}
+#current-page{
+    font-weight: 600;
+}
+#pages a:active{
+    text-decoration: underline;
+
+}
+#drop-list{
+    position: absolute;
+    top: 2rem;
+    left: 30%;
+    background-color: #865558;
+    display: none;
+}
+#drop-list:hover{
+    display: block;
+}
+#drop-list li{
+    display: block;
+    padding-bottom: 0.3rem;
+}
+#drop-list ul{
+    padding: 0.3rem 1rem;
+}
+#drop:hover #drop-list{
+    display: block;
+}
+#drop:hover .fa-caret-down{
+    color: #865558;
+}
+#small-submenu li{
+    display: block;
+    text-align: left;
+}
+#small-submenu a{
+    color: #865558;
+}
+#small-submenu{
+    margin-top: 1rem;
+    padding-left: 30%;
+}
+.parallax {
+    background-image: url('Images/justimg.jpg');
+    height: 100%; 
+    width: 80%;
+    background-attachment: fixed;
+    background-position-y: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.fa-brands, .fa-solid{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.scroll{
+    overflow: hidden;
+}
+#small-menu .fa-brands, #small-menu .fa-solid{
+    color: #865558;
+    font-size: 1.5rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-top: 1rem;
+}
+#socials{
+    position: absolute;
+    right: 15%;
+    top: 5rem;
+}
+#socials li{
+    list-style: none;
+}
+#socials ul{
+    padding: 0%;
+    margin: 0;
+}
+#small-menu{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    margin-left: 20%;
+    width: 70%;
+    background-color: white;
+    right: -100%; /* Start off the screen to the right */
+    animation: slide 1s forwards;
+}
+.btn{
+    position: absolute;
+    left: 15%;
+    top: 5rem;
+    font-family: 'Work';
+    font-weight: 0;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #865558;
+    padding: 15px 30px;
+    border: solid #865558 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 1px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
+    .btn:hover{
+    transition : 1000ms;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #865558;
+    border: solid 2px #865558;
+    }
+@keyframes slide {
+    to {
+        right: 0; /* Move to the right edge of the screen */
+    }
+}
+
+/* FIRST SECTION */
+#mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    height: fit-content;
+    margin-bottom: 7rem;
+}
+#mission h4{
+    position: relative;
+    left: -5%;
+    top: 0.8rem;
+    font-family: 'Allura';
+    margin-top: 1rem;
+}
+#mission h3{
+    position: relative;
+    right: -5%;
+    font-family: 'Work';
+}
+#wedding-styling-container{
+    width: 60%;
+    height: fit-content;
+    display: inline-flex;
+    margin-top: 1rem;
+}
+#wedding-photo{
+    width: 40%;
+    height: auto;
+    background-image: url(Images/2023_06_01_IMG_9999_68upd.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+#wedding-text{
+    width: 60%;
+    padding: 4rem 3rem;
+    background-color: #ffebe0;
+    font-family: 'Work';
+    font-size: 0.9rem;
+    position: relative;
+    line-height: 1.5;
+}
+.btn-about{
+    position: absolute;
+    bottom: -2rem;
+    font-family: 'Work';
+    font-weight: 0;
+    font-size: 1rem;
+    left: 30%;
+    color: #fff;
+    background-color: #ebaaa8;
+    padding: 15px 30px;
+    border: solid #ebaaa8 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 1px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
+    .btn-about:hover{
+    transition : 1000ms;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #ebaaa8;
+    border: solid 2px #ebaaa8;
+    }
+
+/* SECOND SECTION */
+#second-section{
+    padding-top: 5rem;
+    background-color: #ddadab;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    padding-bottom: 5rem;
+}
+.cardd{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.image{
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+#m{
+    background-image: url(Images/2023_06_01_IMG_9999_834.jpg);
+}
+#h{
+    background-image: url(Images/2023_06_01_IMG_9999_525.jpg);
+}
+#b{
+    background-image: url(Images/2023_06_01_IMG_9999_644.jpg);
+}
+#second-section h4{
+    font-family: 'Allura';
+    position: relative;
+    top: -0.5rem;
+    left: 5%;
+    margin-bottom: 3rem;
+}
+#second-section h3{
+    font-family: 'Work';
+}
+#second-section h5{
+    font-family: 'Work';
+}
+#services{
+    max-width: 1100px;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+.btn-click{
+    position: relative;
+    top: -1rem;
+    font-family: 'Work';
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #865558;
+    padding: 10px 15px;
+    border: solid #865558 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 1px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
+    .btn-click:hover{
+    transition : 1000ms;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #865558;
+    border: solid 2px #865558;
+    }
+#upper-block{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: #c29492;
+    right: -7%;
+    top: -1rem;
+    z-index: 0;
+}
+#lower-block{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: #e6bebd;
+    left: -7%;
+    bottom: -1rem;
+    z-index: 0;
+}
+/* MENU */
+
+.menu-btn{
+    opacity: 0;
+    top: 1rem;
+    left: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.menu-btn_shape{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all .5s ease-in-out;
+    z-index: 2;
+}
+.menu-btn_shape::before,
+.menu-btn_shape::after{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn_shape::before{
+    transform: translateY(-13px);
+}
+.menu-btn_shape::after{
+    transform: translateY(13px);
+}
+
+/* ANIMATION */
+
+.menu-btn.open .menu-btn_shape{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn_shape::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn_shape::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+/* THIRD */
+#thirdsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#section-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#section-text p{
+    max-width: 400px;
+    width: 90%;
+    font-family: 'Work';
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+#block{
+    position: absolute;
+    background-color: #ffebe0;
+    width: 200px;
+    height: 400px;
+    z-index: -1;
+    left: -2rem;
+    top: 3rem
+}
+#section-text h3{
+    font-family: 'Work';
+    margin-bottom: 1rem;
+    width: 90%;
+}
+#photos{
+    width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mirror{
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin: 4rem 0;
+}
+#roundlogo{
+    position: absolute;
+    width: 120px;
+    z-index: 2;
+    top: 3rem;
+    right: -1rem;
+}
+.btn-review{
+    font-family: 'Work';
+    font-size: 1rem;
+    left: 30%;
+    color: #fff;
+    background-color: #ebaaa8;
+    padding: 15px 30px;
+    border: solid #ebaaa8 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 1px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
+    .btn-review:hover{
+    transition : 1000ms;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #ebaaa8;
+    border: solid 2px #ebaaa8;
+    }
+/* STRIP */
+#strip{
+    background-image: url('Images/stripcombo.png');
+    height: 20rem; 
+    width: 100%;
+    background-attachment: fixed;
+    background-position-y: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* FOOTER */
+#footer{
+    background-color: #ddadab;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 0.6rem;
+    width: 100%;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px){
+    #wedding-styling-container{
+        width: 80%;
+    }
+    .btn-about{
+        left: 25%;}
+    #section-text{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 700px){
+    #wedding-styling-container{
+        width: 90%;
+    }
+    #wedding-text{
+        padding: 2.5rem;
+    }
+    #strip{
+        height: 15rem;
+        background-image: url(Images/stripupdated.png);
+        background-position: center;
+    }
+}
+@media screen and (max-width: 710px){
+    #thirdsection{
+        flex-direction: column;
+    }
+    #section-text{
+        margin-top: 4rem;
+        width: 80%;
+    }
+    #section-text h3, #section-text p{
+        width: 100%;
+    }
+    #block{
+        top: 1rem;
+        width: 270px;
+        left: -1rem;
+    }
+    #mirror{
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+    .btn-review{
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 500px){
+    #wedding-styling-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    #wedding-photo{
+        width: 100%;
+        min-height: 300px;
+        background-image: url(Images/2023_06_01_IMG_9999_33.jpg);
+    }
+    #wedding-text{
+        width: 100%;
+        padding: 2.5rem 2rem;
+    }
+    .btn-about{
+        left: 28%;
+    }
+}
+@media screen and (max-width: 800px){
+    .parallax {
+
+        width: 100%;
+      }
+      .btn{
+        display: none;
+    }
+}
+@media screen and (max-width: 1160px){
+    .image{
+        height: 200px;
+        width: 200px;
+    }
+    #second-section h5{
+        font-size: 1.1rem;
+    }
+    #services{
+        max-width: unset;
+        gap: 1rem;
+    }
+    #upper-block{
+        height: 200px;
+        width: 200px;
+        right: -5%;
+    }
+    #lower-block{
+        height: 200px;
+        width: 200px;
+        left: -5%;
+    }
+}
+@media screen and (max-width: 550px){
+    .menu-btn{
+        opacity: 1;
+        }
+      #menu{
+        display: none;
+      }
+      #top-page img{
+        padding-bottom: 15px;
+        width: 150px;
+    }
+    #socials{
+        position: absolute;
+        right: 20px;
+        top: 3rem;
+    }
+    .fa-brands, .fa-solid{
+        color: white;
+        font-size: 1.3rem;
+        margin-left: 0.5rem;
+    }
+}
+@media screen and (max-width: 700px){
+    #services{
+        gap: 1rem;
+        flex-direction: column;
+    }
+    #upper-block{
+        right: -4rem;
+        height: 300px;
+        width: 300px;
+    }
+    #lower-block{
+        left: -4rem;
+        height: 300px;
+        width: 300px;
+    }
+    .image{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 440px){
+    #upper-block{
+        right: -2rem;
+    }
+    #lower-block{
+        left: -2rem;
+    }
+    #second-section h4{
+        position:static;
+        width: 70%;
+        text-align: center;
+    }
+    .btn-about{
+        left: 20%;
+    }
+}
+@media screen and (max-width: 370px){
+    #upper-block{
+        display: none;
+    }
+    #lower-block{
+        display: none;
+    }
+    #second-section h3{
+        width: 90%;
+    }
+    #second-section h4{
+        text-align: left;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    .image{
+        width: 270px;
+    }
+}
+@media screen and (max-width: 350px){
+    #block{
+     display: none;
+    }
+    #mirror{
+        width: 270px;
+    }
+    #roundlogo{
+        width: 100px;
+        top: 2rem;
+        right: 0rem;
+    }
+    #photos{
+        width: unset;
+    }
+}
